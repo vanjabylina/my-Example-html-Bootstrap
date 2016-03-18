@@ -1,0 +1,249 @@
+﻿/*
+Description:
+		1 - Including files ("fonts.css", "reset.css" and others)
+		2 - Tags styles and General styles
+		3 - header
+		4 - .content
+		5 - footer
+		* - @media rules
+*/
+
+/* 1 - BEGIN of Including files ("fonts.css", "reset.css" and others) ---------------------------------------------------------- */
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/ubuntu/ubuntu-r.eot');
+	src: url('fonts/ubuntu/ubuntu-r.eot') format('embedded-opentype'),
+		 url('fonts/ubuntu/ubuntu-r.woff2') format('woff2'),
+		 url('fonts/ubuntu/ubuntu-r.woff') format('woff'),
+		 url('fonts/ubuntu/ubuntu-r.ttf') format('truetype'),
+		 url('fonts/ubuntu/ubuntu-r.svg#Ubuntu') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/ubuntu/ubuntu-m.eot');
+	src: url('fonts/ubuntu/ubuntu-m.eot') format('embedded-opentype'),
+		 url('fonts/ubuntu/ubuntu-m.woff2') format('woff2'),
+		 url('fonts/ubuntu/ubuntu-m.woff') format('woff'),
+		 url('fonts/ubuntu/ubuntu-m.ttf') format('truetype'),
+		 url('fonts/ubuntu/ubuntu-m.svg#Ubuntu') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/ubuntu/ubuntu-b.eot');
+	src: url('fonts/ubuntu/ubuntu-b.eot') format('embedded-opentype'),
+		 url('fonts/ubuntu/ubuntu-b.woff2') format('woff2'),
+		 url('fonts/ubuntu/ubuntu-b.woff') format('woff'),
+		 url('fonts/ubuntu/ubuntu-b.ttf') format('truetype'),
+		 url('fonts/ubuntu/ubuntu-b.svg#Ubuntu') format('svg');
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/ubuntu/ubuntu-ri.eot');
+	src: url('fonts/ubuntu/ubuntu-ri.eot') format('embedded-opentype'),
+		 url('fonts/ubuntu/ubuntu-ri.woff2') format('woff2'),
+		 url('fonts/ubuntu/ubuntu-ri.woff') format('woff'),
+		 url('fonts/ubuntu/ubuntu-ri.ttf') format('truetype'),
+		 url('fonts/ubuntu/ubuntu-ri.svg#Ubuntu') format('svg');
+	font-style: italic;
+	font-weight: 800;
+}
+
+/* BEGIN of CSS RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+/* END of CSS RESET */
+
+/* 1 - END of Including files ("fonts.css", "reset.css" and others) ---------------------------------------------------------- */
+/* 2 - BEGIN of Tags and General styles ---------------------------------------------------------- */
+
+body {
+	min-height: 600px;
+	margin: 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	opacity: 0.8;
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+a:active {
+	opacity: 0.65;
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+button:hover, input:hover, select:hover {
+	opacity: 0.8;
+}
+
+strong {
+	font-weight: 800;
+}
+
+em {
+	font-style:italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clear:before, .clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.hide, .hidden {
+	display: none;
+}
+
+.content-wrapper {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.alignleft, img.alignleft {
+	float: left;
+	display: block;
+	margin: 0 5px 0 0;
+}
+
+.alignright, img.alignright {
+	float: right;
+	display: block;
+	margin: 0 0 0 5px;
+}
+
+.aligncenter, img.aligncenter {
+	float: none;
+	display: block;
+	margin: 0 auto 0;
+}
+
+.alignnone, img.alignnone {
+	margin: 0 0 0;
+	display: block;
+}
+
+/* 2 - END of Tags styles and General styles ---------------------------------------------------------- */
+/* 3 - BEGIN of header ---------------------------------------------------------- */
+
+header {
+	background: #d6d6d6;
+	min-height: 80px;
+}
+
+.logo {
+	float: left;
+	font-size: 22px;
+}
+
+/* 3 - END of header ---------------------------------------------------------- */
+/* 4 - BEGIN of .content ---------------------------------------------------------- */
+
+.content {
+	background: #a4a4a4;
+	min-height: 200px;
+}
+
+/* 4 - END of .content ---------------------------------------------------------- */
+/* 5 - BEGIN of footer ---------------------------------------------------------- */
+
+footer {
+	background: #878787;
+	min-height: 80px;
+}
+
+/* 5 - END of footer ---------------------------------------------------------- */
+
+/* * - BEGIN of @media ---------------------------------------------------------- */
+
+@media screen and (max-width: 1199px) {
+	
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 991px) {
+	
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+	
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 550px) {
+	
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* * - END of @media ---------------------------------------------------------- */
